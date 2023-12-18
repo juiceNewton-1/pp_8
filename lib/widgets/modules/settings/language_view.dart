@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/helpers/constants.dart';
 import 'package:pp_8/models/language.dart';
 import 'package:pp_8/widgets/components/app_button.dart';
@@ -13,10 +15,34 @@ class LanguageView extends StatefulWidget {
 }
 
 class _LanguageViewState extends State<LanguageView> {
-  late var _selectedLanguage = Constants.languages.first;
+  Language? _selectedLanguage;
 
-  void _selectLanguage(Language language) =>
-      setState(() => _selectedLanguage = language);
+  @override
+  void initState() {
+    _init();
+    super.initState();
+  }
+
+  void _init() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      setState(() {
+        _selectedLanguage = Constants.languages.firstWhere((element) =>
+            element.locale.languageCode == context.locale.languageCode);
+      });
+    });
+  }
+
+  void _selectLanguage(Language language) {
+    setState(() {
+      _selectedLanguage = language;
+    });
+  }
+
+  void _changeLanguage() {
+    setState(() {
+      context.setLocale(_selectedLanguage!.locale);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +50,8 @@ class _LanguageViewState extends State<LanguageView> {
       floatingActionButton: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: AppButton(
-          label: 'Change',
-          onPressed: () {},
+          label: LocaleKeys.change_action.tr(),
+          onPressed: _changeLanguage,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
@@ -35,7 +61,7 @@ class _LanguageViewState extends State<LanguageView> {
           child: Assets.icons.chevronLeft.svg(),
           onPressed: Navigator.of(context).pop,
         ),
-        title: Text('Change language'),
+        title: Text(LocaleKeys.change_language_title.tr()),
       ),
       body: ListView.separated(
         padding: EdgeInsets.only(
@@ -89,9 +115,9 @@ class _LanguageTile extends StatelessWidget {
         child: Row(
           children: [
             Text(
-                  language.name,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
+              language.name,
+              style: Theme.of(context).textTheme.bodyLarge,
+            ),
             Spacer(),
             if (isSelected) Assets.icons.selected.svg(),
           ],

@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/models/currencies/crypto_currency.dart';
 import 'package:pp_8/widgets/components/app_text_field.dart';
 import 'package:pp_8/widgets/components/currency_tile.dart';
@@ -36,8 +38,12 @@ class _CryptoViewState extends State<CryptoView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Crypto'),
-        actions: [SettingsButton()],
+        title: Text(LocaleKeys.crypto_title.tr()),
+        actions: [          SettingsButton(
+            callback: () {
+              setState(() {});
+            },
+          )],
       ),
       body: Column(
         children: [
@@ -49,7 +55,7 @@ class _CryptoViewState extends State<CryptoView> {
                 valueListenable: _cryptoController,
                 builder: (context, value, child) => AppTextField(
                   backgroundColor: Color(0xFFDFDEE5).withOpacity(0.93),
-                  placeholder: 'Search',
+                  placeholder: LocaleKeys.crypto_search.tr(),
                   onChanged: _handleSearchUpdate,
                   controller: _searchController,
                   padding: EdgeInsets.only(left: 5, right: 10),
@@ -123,7 +129,7 @@ class _ErrorState extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Some error has occured.\nPlease, try again',
+           LocaleKeys.states_error.tr(),
             style: Theme.of(context).textTheme.bodyLarge,
             textAlign: TextAlign.center,
           ),

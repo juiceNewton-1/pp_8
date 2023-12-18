@@ -1,9 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
-import 'package:pp_8/helpers/datetime_helper.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/models/news.dart';
-import 'package:pp_8/theme/custom_colors.dart';
 import 'package:pp_8/widgets/components/news_cover.dart';
 
 class SingleNewsView extends StatelessWidget {
@@ -11,18 +11,15 @@ class SingleNewsView extends StatelessWidget {
   const SingleNewsView({super.key, required this.news});
 
   factory SingleNewsView.ceate(BuildContext context) {
-    final news =
-        ModalRoute.of(context)!.settings.arguments as News;
+    final news = ModalRoute.of(context)!.settings.arguments as News;
     return SingleNewsView(news: news);
   }
 
   @override
   Widget build(BuildContext context) {
-    final hours = DateTimeHelper.getHours(news.date);
-    final minutes = DateTimeHelper.getMinutes(news.date);
     return Scaffold(
       appBar: AppBar(
-        title: Text('News'),
+        title: Text(LocaleKeys.news_title.tr()),
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Assets.icons.chevronLeft.svg(),
@@ -46,16 +43,7 @@ class SingleNewsView extends StatelessWidget {
                   .labelLarge!
                   .copyWith(fontSize: 18),
             ),
-            SizedBox(height: 20),
-            Text(
-              'Today, ${hours}:$minutes',
-              style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                    fontWeight: FontWeight.w400,
-                    color:
-                        Theme.of(context).extension<CustomColors>()!.disabled,
-                  ),
-            ),
-            SizedBox(height: 22),
+            SizedBox(height: 25),
             Text(
               news.body,
               style: Theme.of(context).textTheme.labelMedium,

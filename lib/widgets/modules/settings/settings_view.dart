@@ -1,8 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
+import 'package:pp_8/helpers/constants.dart';
 import 'package:pp_8/routes/route_names.dart';
 import 'package:pp_8/services/repositories/currency_uint_repository.dart';
 import 'package:pp_8/widgets/components/app_button.dart';
@@ -16,11 +19,14 @@ class SettingsView extends StatefulWidget {
 
 class _SettingsViewState extends State<SettingsView> {
   final _currencyUintRepository = GetIt.instance<CurrencyUintRepository>();
+
   @override
   Widget build(BuildContext context) {
+    final language = Constants.languages.firstWhere((element) =>
+        element.locale.languageCode == context.locale.languageCode);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text(LocaleKeys.settings_settings.tr()),
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Assets.icons.chevronLeft.svg(),
@@ -33,13 +39,13 @@ class _SettingsViewState extends State<SettingsView> {
         child: Column(
           children: [
             _SettingsTile(
-              label: 'Write to us',
+              label: LocaleKeys.settings_wtire_us.tr(),
               onPressed: () =>
                   Navigator.of(context).pushNamed(RouteNames.writeUs),
             ),
             SizedBox(height: 10),
             _SettingsTile(
-              label: 'Rate the app',
+              label: LocaleKeys.settings_rate.tr(),
               onPressed: () => showDialog(
                 context: context,
                 builder: (context) => _RatingDialog(),
@@ -47,21 +53,21 @@ class _SettingsViewState extends State<SettingsView> {
             ),
             SizedBox(height: 10),
             _SettingsTile(
-              label: 'Share app',
+              label: LocaleKeys.settings_share.tr(),
               onPressed: () {},
             ),
             SizedBox(height: 10),
             _SettingsTile(
-              label: 'Language',
+              label: LocaleKeys.settings_language.tr(),
               onPressed: () =>
                   Navigator.of(context).pushNamed(RouteNames.language),
-              helperText: 'English',
+              helperText: language.name,
             ),
             SizedBox(height: 10),
             ValueListenableBuilder(
               valueListenable: _currencyUintRepository,
               builder: (context, value, child) => _SettingsTile(
-                label: 'Default currency',
+                label: LocaleKeys.settings_currency.tr(),
                 onPressed: () =>
                     Navigator.of(context).pushNamed(RouteNames.changeCurrency),
                 helperText: _currencyUintRepository.value.currencyUint!.symbol,
@@ -69,7 +75,7 @@ class _SettingsViewState extends State<SettingsView> {
             ),
             SizedBox(height: 10),
             _SettingsTile(
-              label: 'World Resources',
+              label: LocaleKeys.settings_resources.tr(),
               onPressed: () =>
                   Navigator.of(context).pushNamed(RouteNames.resources),
             ),
@@ -153,11 +159,11 @@ class _RatingDialogState extends State<_RatingDialog> {
                 )
               ],
             ),
-            Text('Rate our app',
+            Text(LocaleKeys.settings_rate_title.tr(),
                 style: Theme.of(context).textTheme.displayMedium),
             SizedBox(height: 12),
             Text(
-              'your feedback will inspire us to\ncreate even cooler applications',
+              LocaleKeys.settings_rate_body.tr(),
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge,
             ),
@@ -174,7 +180,7 @@ class _RatingDialogState extends State<_RatingDialog> {
             ),
             SizedBox(height: 12),
             AppButton(
-              label: 'Rate',
+              label: LocaleKeys.settings_rate_action.tr(),
               onPressed: _rate,
             )
           ],

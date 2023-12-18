@@ -1,9 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pp_8/helpers/datetime_helper.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/models/news.dart';
 import 'package:pp_8/routes/route_names.dart';
-import 'package:pp_8/theme/custom_colors.dart';
 import 'package:pp_8/widgets/components/news_cover.dart';
 import 'package:pp_8/widgets/components/settings_button.dart';
 import 'package:pp_8/widgets/modules/main/news/controller/news_controller.dart';
@@ -21,9 +21,13 @@ class _NewsViewState extends State<NewsView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('News'),
+        title: Text(LocaleKeys.news_title.tr()),
         actions: [
-          SettingsButton(),
+                    SettingsButton(
+            callback: () {
+              setState(() {});
+            },
+          ),
         ],
       ),
       body: ValueListenableBuilder(
@@ -73,7 +77,7 @@ class _ErrorState extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Error has occured:\n$errorMessage',
+           LocaleKeys.states_error.tr().tr(),
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.titleMedium,
           ),
@@ -105,7 +109,7 @@ class _LoadedState extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Data could not be retrieved.\nPlease, try again',
+                 LocaleKeys.states_error.tr().tr(),
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
@@ -139,9 +143,7 @@ class _NewsTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hours = DateTimeHelper.getHours(news.date);
 
-    final minutes = DateTimeHelper.getMinutes(news.date);
 
     return SizedBox(
       height: 70,
@@ -165,16 +167,6 @@ class _NewsTile extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
-                  Spacer(),
-                  Text(
-                    'Today, ${hours}:$minutes',
-                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                          color: Theme.of(context)
-                              .extension<CustomColors>()!
-                              .disabled,
-                          fontWeight: FontWeight.w500,
-                        ),
-                  )
                 ],
               ),
             )

@@ -1,0 +1,94 @@
+{
+    "tooltip": {
+        "headline": "Bienvenue dans notre application!",
+        "text1": "Dans cette section, vous aurez\ndes devises attribuées, qui sont\ncalculées au taux actuel",
+        "text2": "Dans cette section, vous pourrez\nsuivre toutes les dernières actualités\ndans le domaine du Forex et des cryptomonnaies",
+        "text3": "Dans cette section, vous trouverez une liste de\ncryptomonnaies et de leur valeur dans\nla devise sélectionnée",
+        "text4": "Cette section contient un convertisseur\navec lequel vous pouvez convertir une\ndevise en une autre",
+        "back": "Retour",
+        "next": "Suivant",
+        "start": "Commençons"
+    },
+    "continue_action": "Continuer",
+    "change_action": "Changer",
+    "currency_change": {
+        "select": "Sélectionner la devise par défaut",
+        "change": "Changer la devise par défaut"
+    },
+    "settings": {
+        "settings": "Paramètres", 
+        "wtire_us": "Écrivez-nous",
+        "rate": "Noter l'application",
+        "share": "Partager l'application",
+        "language": "Langue",
+        "currency": "Devise par défaut",
+        "resources": "Ressources mondiales",
+        "rate_title": "Notez notre application",
+        "rate_body": "Votre avis nous inspirera à\ncréer des applications encore plus géniales",
+        "rate_action": "Noter"
+    },
+    "resources": {
+        "title": "Ressources mondiales",
+        "gold": "Or",
+        "silver": "Argent",
+        "oil": "Pétrole",
+        "cocoa": "Cacao",
+        "natgaz": "Gaz naturel",
+        "copper": "Cuivre",
+        "platinum": "Platine",
+        "wheat": "Blé",
+        "eurooil": "Pétrole Euro",
+        "nickel": "Nickel"
+    },
+    "support": {
+        "title": "Écrivez-nous",
+        "enter_email": "Entrez votre adresse e-mail",
+        "email": "E-mail",
+        "write_comment": "Rédigez votre commentaire",
+        "text": "Texte",
+        "send": "Envoyer",
+        "dialog_title": "Super ! Vous nous avez envoyé votre message avec succès",
+        "dialog_action": "Excellent"
+    },
+    "change_language": {
+        "title": "Changer de langue"
+    },
+    "home": {
+        "title": "Accueil",
+        "exchange_rates": "Taux de change",
+        "cryptocurrency": "Cryptomonnaie",
+        "add_action": "Ajouter une devise",
+        "dialog_title": "Êtes-vous sûr de vouloir\nretirer cette devise de\nvotre écran d'accueil ?",
+        "dialog_yes": "Oui",
+        "dialog_no": "Non",
+        "edit": "Éditer",
+        "done": "Terminé"
+    },
+    "news": {
+        "title": "Actualités"
+    },
+    "converter": {
+        "title": "Convertisseur",
+        "clear_action": "Effacer"
+    },
+    "crypto": {
+        "title": "Crypto",
+        "search": "Recherche"
+    },
+    "add_currency": {
+        "title": "Ajouter une devise",
+        "exchange": "Devise",
+        "crypto": "Cryptomonnaie",
+        "add_action": "Ajouter"
+    },
+    "bottom_menu": {
+        "home": "Accueil",
+        "news": "Actualités",
+        "crypto": "Crypto",
+        "converter": "Convertisseur"
+    },
+    "states": {
+        "empty": "Vous devez ajouter\nvotre première devise",
+        "error": "Une erreur s'est produite.\nVeuillez réessayer"
+    }
+}

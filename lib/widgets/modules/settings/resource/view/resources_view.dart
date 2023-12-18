@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/helpers/constants.dart';
 import 'package:pp_8/models/resources/resource.dart';
 import 'package:pp_8/models/resources/resource_query.dart';
@@ -26,7 +28,7 @@ class _ResourcesViewState extends State<ResourcesView> {
           child: Assets.icons.chevronLeft.svg(),
           onPressed: Navigator.of(context).pop,
         ),
-        title: Text('World resources'),
+        title: Text(LocaleKeys.settings_resources.tr()),
       ),
       body: ValueListenableBuilder(
         valueListenable: _resourcesController,
@@ -70,7 +72,7 @@ class _ErrorState extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Some error has occured.\nPlease, try again',
+           LocaleKeys.states_error.tr(),
             style: Theme.of(context).textTheme.bodyLarge,
             textAlign: TextAlign.center,
           ),

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
 import 'package:pp_8/models/currencies/forex_currency.dart';
 
@@ -5,10 +6,18 @@ import 'package:pp_8/models/language.dart';
 import 'package:pp_8/models/resources/resource_query.dart';
 
 class Constants {
-
   static const languages = [
-    Language(name: 'Русский'),
-    Language(name: 'English'),
+    Language(name: 'العربية', locale: Locale('ar')),
+    Language(name: 'বাংলা', locale: Locale('bn')),
+    Language(name: 'Dansk', locale: Locale('de')),
+    Language(name: 'English', locale: Locale('en')),
+    Language(name: 'Español', locale: Locale('es')),
+    Language(name: 'Français', locale: Locale('fr')),
+    Language(name: 'हिन्दी', locale: Locale('hi')),
+    Language(name: '日本語', locale: Locale('jp')),
+    Language(name: '한국어', locale: Locale('kr')),
+    Language(name: 'Português', locale: Locale('pt')),
+
   ];
 
   static final reourseQueries = [
@@ -22,7 +31,8 @@ class Constants {
     ResourceQuery(
         symbol: 'XPT', icon: Assets.images.platinum, name: 'Platinum'),
     ResourceQuery(symbol: 'WHEAT', icon: Assets.images.grain, name: 'Wheat'),
-    ResourceQuery(symbol: 'HOU22', icon: Assets.images.liquid, name: 'Heating Oil'),
+    ResourceQuery(
+        symbol: 'HOU22', icon: Assets.images.liquid, name: 'Heating Oil'),
     ResourceQuery(symbol: 'NI', icon: Assets.images.beam, name: 'Nickel'),
   ];
 

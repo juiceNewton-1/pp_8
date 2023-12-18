@@ -1,0 +1,94 @@
+{
+    "tooltip": {
+        "headline": "Willkommen in unserer Anwendung!",
+        "text1": "In diesem Abschnitt haben Sie\nzugewiesene Währungen, die\nzum aktuellen Kurs berechnet werden",
+        "text2": "In diesem Abschnitt können Sie alle\nneuesten Nachrichten im Bereich\nForex und Kryptowährungen verfolgen",
+        "text3": "In diesem Abschnitt finden Sie eine Liste von\nryptowährungen und ihren Wert in\nder ausgewählten Währung",
+        "text4": "Dieser Abschnitt enthält einen Konverter,\nmit dem Sie eine Währung in eine\nandere umrechnen können",
+        "back": "Zurück",
+        "next": "Weiter",
+        "start": "Lass uns beginnen"
+    },
+    "continue_action": "Fortsetzen",
+    "change_action": "Ändern",
+    "currency_change": {
+        "select": "Standardwährung auswählen",
+        "change": "Standardwährung ändern"
+    },
+    "settings": {
+        "settings": "Indstillinger", 
+        "write_us": "Schreiben Sie uns",
+        "rate": "Bewerten Sie die App",
+        "share": "App teilen",
+        "language": "Sprache",
+        "currency": "Standardwährung",
+        "resources": "Weltressourcen",
+        "rate_title": "Bewerten Sie unsere App",
+        "rate_body": "Ihr Feedback wird uns inspirieren,\nnoch coolere Anwendungen zu erstellen",
+        "rate_action": "Bewerten"
+    },
+    "resources": {
+        "title": "Weltressourcen",
+        "gold": "Gold",
+        "silver": "Silber",
+        "oil": "Öl",
+        "cocoa": "Kakao",
+        "natgaz": "Naturgas",
+        "copper": "Kupfer",
+        "platinum": "Platin",
+        "wheat": "Weizen",
+        "eurooil": "Euroöl",
+        "nickel": "Nickel"
+    },
+    "support": {
+        "title": "Schreiben Sie uns",
+        "enter_email": "Geben Sie Ihre E-Mail-Adresse ein",
+        "email": "E-Mail",
+        "write_comment": "Schreiben Sie Ihren Kommentar",
+        "text": "Text",
+        "send": "Senden",
+        "dialog_title": "Großartig! Sie haben uns Ihre Nachricht erfolgreich\ngesendet",
+        "dialog_action": "Ausgezeichnet"
+    },
+    "change_language": {
+        "title": "Sprache ändern"
+    },
+    "home": {
+        "title": "Haupt",
+        "exchange_rates": "Wechselkurse",
+        "cryptocurrency": "Kryptowährung",
+        "add_action": "Währung hinzufügen",
+        "dialog_title": "Sind Sie sicher, dass Sie diese Währung von\nIhrem Startbildschirm entfernen möchten?",
+        "dialog_yes": "Ja",
+        "dialog_no": "Nein",
+        "edit": "Rediger",
+        "done": "Færdig"
+    },
+    "news": {
+        "title": "Nachrichten"
+    },
+    "converter": {
+        "title": "Konverter",
+        "clear_action": "Löschen"
+    },
+    "crypto": {
+        "title": "Krypto",
+        "search": "Suchen"
+    },
+    "add_currency": {
+        "title": "Währung hinzufügen",
+        "exchange": "Währung",
+        "crypto": "Kryptowährung",
+        "add_action": "Hinzufügen"
+    },
+    "bottom_menu": {
+        "home": "Hjem",
+        "news": "Nyheder",
+        "crypto": "Crypto",
+        "converter": "Konverter"
+    },
+    "states": {
+        "empty": "Du skal tilføje\ndin første valuta",
+        "error": "Der opstod en fejl.\nPrøv venligst igen"
+    }
+}

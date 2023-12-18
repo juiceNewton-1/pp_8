@@ -158,8 +158,8 @@ class _PrivacyViewState extends State<PrivacyView> {
                           width: constraints.maxWidth * 0.9,
                           height: 60,
                           child: AppButton(
-                            label: 'accept privacy',
-                            onPressed: _acceptPrivacy,
+                            label: 'Agree',
+                            onPressed: _accept,
                           ),
                         ),
                       ),
@@ -171,7 +171,7 @@ class _PrivacyViewState extends State<PrivacyView> {
     );
   }
 
-  void _acceptPrivacy() {
+  void _accept() {
     _databaseService.put(DatabaseKeys.acceptedPrivacy, true);
     Navigator.of(context).pushReplacementNamed(RouteNames.currencySelection);
   }

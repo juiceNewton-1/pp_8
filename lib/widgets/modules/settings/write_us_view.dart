@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/routes/route_names.dart';
 import 'package:pp_8/widgets/components/app_button.dart';
 import 'package:pp_8/widgets/components/app_text_field.dart';
@@ -57,7 +59,7 @@ class _WriteUsViewState extends State<WriteUsView> {
           child: Assets.icons.chevronLeft.svg(),
           onPressed: Navigator.of(context).pop,
         ),
-        title: Text('Write to us'),
+        title: Text(LocaleKeys.support_title.tr()),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
@@ -65,21 +67,21 @@ class _WriteUsViewState extends State<WriteUsView> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Enter your email',
+              LocaleKeys.support_enter_email.tr(),
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 5),
             SizedBox(
               height: 46,
               child: AppTextField(
-                placeholder: 'Email',
+                placeholder: LocaleKeys.support_email.tr(),
                 controller: _emaiController,
                 onChanged: _onChanged,
               ),
             ),
             SizedBox(height: 16),
             Text(
-              'Write your comment',
+              LocaleKeys.support_write_comment.tr(),
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 5),
@@ -87,7 +89,7 @@ class _WriteUsViewState extends State<WriteUsView> {
               height: 122,
               child: AppTextField(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-                placeholder: 'Text',
+                placeholder: LocaleKeys.support_text.tr(),
                 textAlignVertical: TextAlignVertical.top,
                 controller: _messageController,
                 onChanged: _onChanged,
@@ -95,7 +97,7 @@ class _WriteUsViewState extends State<WriteUsView> {
             ),
             Spacer(),
             AppButton(
-              label: 'Send',
+              label: LocaleKeys.support_send.tr(),
               onPressed: _isButtonEnabled ? _send : null,
             ),
             SizedBox(height: 20),
@@ -123,13 +125,13 @@ class _MessageSentDialog extends StatelessWidget {
             Assets.images.success.image(width: 105, height: 105),
             SizedBox(height: 12),
             Text(
-              'Great! You have successfully sent\nus your message',
+              LocaleKeys.support_dialog_title.tr(),
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             SizedBox(height: 17),
             AppButton(
-              label: 'Excellent',
+              label: LocaleKeys.support_dialog_action.tr(),
               onPressed: () => Navigator.of(context).popUntil(
                 (route) => route.settings.name == RouteNames.settings,
               ),

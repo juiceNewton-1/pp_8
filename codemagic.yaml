@@ -4,11 +4,11 @@ workflows:
     instance_type: mac_mini_m1
     max_build_duration: 45
     integrations:
-      app_store_connect: PP8 # This is key name from codemagic settings
+      app_store_connect: KursValPP8 
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.hravlapi.p2papp
+        bundle_identifier: com.vlappkurs.pp2kursla
       flutter: stable
       xcode: latest
       cocoapods: default

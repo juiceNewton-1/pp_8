@@ -1,0 +1,94 @@
+{
+    "tooltip": {
+        "headline": "¡Bienvenido a nuestra aplicación!",
+        "text1": "En esta sección tendrás\nmonedas asignadas, las cuales se\ncalculan a la tasa actual",
+        "text2": "En esta sección podrás seguir\ntodas las últimas noticias\nen el campo de Forex y Criptomonedas",
+        "text3": "En esta sección encontrarás una lista de\nriptomonedas y su valor en\nla moneda seleccionada",
+        "text4": "Esta sección contiene un convertidor\ncon el cual puedes convertir una\nmoneda a otra",
+        "back": "Atrás",
+        "next": "Siguiente",
+        "start": "Comencemos"
+    },
+    "continue_action": "Continuar",
+    "change_action": "Cambiar",
+    "currency_change": {
+        "select": "Seleccionar moneda predeterminada",
+        "change": "Cambiar moneda predeterminada"
+    },
+    "settings": {
+        "settings": "Configuración", 
+        "write_us": "Escríbenos",
+        "rate": "Califica la aplicación",
+        "share": "Compartir aplicación",
+        "language": "Idioma",
+        "currency": "Moneda predeterminada",
+        "resources": "Recursos Mundiales",
+        "rate_title": "Califica nuestra aplicación",
+        "rate_body": "tu opinión nos inspirará a\ncrear aplicaciones aún mejores",
+        "rate_action": "Calificar"
+    },
+    "resources": {
+        "title": "Recursos mundiales",
+        "gold": "Oro",
+        "silver": "Plata",
+        "oil": "Petróleo",
+        "cocoa": "Cacao",
+        "natgaz": "Gas Natural",
+        "copper": "Cobre",
+        "platinum": "Platino",
+        "wheat": "Trigo",
+        "eurooil": "Eurooil",
+        "nickel": "Níquel"
+    },
+    "support": {
+        "title": "Escríbenos",
+        "enter_email": "Ingresa tu correo electrónico",
+        "email": "Correo electrónico",
+        "write_comment": "Escribe tu comentario",
+        "text": "Texto",
+        "send": "Enviar",
+        "dialog_title": "¡Genial! Has enviado tu mensaje\nde forma exitosa",
+        "dialog_action": "Excelente"
+    },
+    "change_language": {
+        "title": "Cambiar idioma"
+    },
+    "home": {
+        "title": "Principal",
+        "exchange_rates": "Tasas de cambio",
+        "cryptocurrency": "Criptomonedas",
+        "add_action": "Agregar moneda",
+        "dialog_title": "¿Estás seguro de que quieres\neliminar esta moneda de\ntu pantalla principal?",
+        "dialog_yes": "Sí",
+        "dialog_no": "No",
+        "edit": "Editar",
+        "done": "Hecho"
+    },
+    "news": {
+        "title": "Noticias"
+    },
+    "converter": {
+        "title": "Convertidor",
+        "clear_action": "Limpiar"
+    },
+    "crypto": {
+        "title": "Cripto",
+        "search": "Buscar"
+    },
+    "add_currency": {
+        "title": "Agregar moneda",
+        "exchange": "Moneda",
+        "crypto": "Criptomoneda",
+        "add_action": "Agregar"
+    },
+    "bottom_menu": {
+        "home": "Inicio",
+        "news": "Noticias",
+        "crypto": "Cripto",
+        "converter": "Conversor"
+    },
+    "states": {
+        "empty": "Necesitas agregar\ntu primera moneda",
+        "error": "Se ha producido un error.\nPor favor, inténtalo de nuevo"
+    }
+}

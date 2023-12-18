@@ -16,6 +16,8 @@
         "change": "Change default currency"
     },
     "settings": {
+
+        "settings": "Settings",
         "wtire_us": "Write to us",
         "rate": "Rate the app",
         "share": "Share app",
@@ -59,7 +61,9 @@
         "add_action": "Add currency",
         "dialog_title": "Are you sure you want to\nremove this currency from\nyour home screen?",
         "dialog_yes": "Yes",
-        "dialog_no": "No"
+        "dialog_no": "No",
+        "edit": "Edit",
+        "done": "Done"
     },
     "news": {
         "title": "News"
@@ -77,5 +81,16 @@
         "exchange": "Currency",
         "crypto": "Cryptocurrency",
         "add_action": "Add"
+    },
+    "bottom_menu": {
+        "home": "Home",
+        "news": "News",
+        "crypto": "Crypto",
+        "converter": "Converter"
+    },
+    "states": {
+        "empty": "You need to add\nyour first currency",
+        "error": "Some error has occured.\nPlease, try again"
     }
+
 }

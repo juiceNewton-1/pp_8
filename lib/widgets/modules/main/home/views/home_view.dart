@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/models/currencies/crypto_currency.dart';
 import 'package:pp_8/models/currencies/currency.dart';
 import 'package:pp_8/models/currencies/forex_currency.dart';
@@ -34,7 +36,7 @@ class _HomeViewState extends State<HomeView> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text(
-                  'Are you sure you want to\nremove this currency from\nyour home screen?',
+                  LocaleKeys.home_dialog_title.tr(),
                   style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
@@ -86,29 +88,40 @@ class _HomeViewState extends State<HomeView> {
         valueListenable: _homeController,
         builder: (context, value, child) => value.isLoading
             ? SizedBox.shrink()
-            : AppButton(
-                label: 'Add currency', onPressed: _navigateToAddCurrencies),
+            : Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: AppButton(
+                  label: LocaleKeys.home_add_action.tr(),
+                  onPressed: _navigateToAddCurrencies,
+                ),
+              ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(
-        title: Text('Home'),
-        actions: [SettingsButton()],
-        leading: Padding(
-          padding: EdgeInsets.only(left: 10),
-          child: ValueListenableBuilder(
-            valueListenable: _homeController,
-            builder: (context, value, child) => CupertinoButton(
-              padding: EdgeInsets.zero,
-              child: Text(
-                value.mode == HomeMode.none ? 'Edit' : 'Done',
-                style: Theme.of(context)
-                    .textTheme
-                    .labelLarge!
-                    .copyWith(color: Theme.of(context).colorScheme.primary),
-              ),
-              onPressed: () => _switchMode(
-                value.mode == HomeMode.edit ? HomeMode.none : HomeMode.edit,
-              ),
+        title: Text(LocaleKeys.home_title.tr()),
+        actions: [
+          SettingsButton(
+            callback: () {
+              setState(() {});
+            },
+          )
+        ],
+        leadingWidth: 90,
+        leading: ValueListenableBuilder(
+          valueListenable: _homeController,
+          builder: (context, value, child) => CupertinoButton(
+            padding: EdgeInsets.zero,
+            child: Text(
+              value.mode == HomeMode.none
+                  ? LocaleKeys.home_edit.tr()
+                  : LocaleKeys.home_done.tr(),
+              style: Theme.of(context)
+                  .textTheme
+                  .labelLarge!
+                  .copyWith(color: Theme.of(context).colorScheme.primary),
+            ),
+            onPressed: () => _switchMode(
+              value.mode == HomeMode.edit ? HomeMode.none : HomeMode.edit,
             ),
           ),
         ),
@@ -133,7 +146,7 @@ class _HomeViewState extends State<HomeView> {
                   children: [
                     if (value.forexCurrencies.isNotEmpty) ...[
                       Text(
-                        'Currencies',
+                        LocaleKeys.home_exchange_rates.tr(),
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       SizedBox(height: 10),
@@ -154,7 +167,7 @@ class _HomeViewState extends State<HomeView> {
                     if (value.cryptoCurrencies.isNotEmpty) ...[
                       SizedBox(height: 32),
                       Text(
-                        'Crypto currencies',
+                        LocaleKeys.home_cryptocurrency.tr(),
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       SizedBox(height: 10),
@@ -190,7 +203,7 @@ class _EmptyState extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'You need to add\nyour first currency',
+        LocaleKeys.states_empty.tr(),
         textAlign: TextAlign.center,
         style: Theme.of(context).textTheme.titleMedium,
       ),
@@ -215,7 +228,7 @@ class _DeleteYesButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         child: Text(
-          'Yes',
+          LocaleKeys.home_dialog_yes.tr(),
           style: Theme.of(context)
               .textTheme
               .titleMedium!
@@ -242,7 +255,7 @@ class _DeleteNoButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         child: Text(
-          'No',
+          LocaleKeys.home_dialog_no.tr(),
           style: Theme.of(context)
               .textTheme
               .titleMedium!

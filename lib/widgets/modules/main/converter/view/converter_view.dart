@@ -1,7 +1,9 @@
 import 'dart:math';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/helpers/rate_helper.dart';
 import 'package:pp_8/models/currencies/forex_currency.dart';
 import 'package:pp_8/theme/custom_colors.dart';
@@ -28,14 +30,19 @@ class _ConverterViewState extends State<ConverterView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Converter'),
+        title: Text(LocaleKeys.converter_title.tr()),
         actions: [
-          SettingsButton(),
+                    SettingsButton(
+            callback: () {
+              setState(() {});
+            },
+          ),
         ],
+        leadingWidth: 90,
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Text(
-            'Clear',
+            LocaleKeys.converter_clear_action.tr(),
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!

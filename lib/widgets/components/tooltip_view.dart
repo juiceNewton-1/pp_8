@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/widgets/components/wave_painter.dart';
 
 class TooltipView extends StatefulWidget {
@@ -57,10 +59,10 @@ class _TooltipViewState extends State<TooltipView>
   int _currentIndex = 0;
 
   final _tooltipItems = [
-    _TooltipItem(icon: Assets.icons.home, label: 'Home'),
-    _TooltipItem(icon: Assets.icons.exchanger, label: 'News'),
-    _TooltipItem(icon: Assets.icons.crypto, label: 'Crypto'),
-    _TooltipItem(icon: Assets.icons.converter, label: 'Converter'),
+    _TooltipItem(icon: Assets.icons.home, label: LocaleKeys.bottom_menu_home.tr()),
+    _TooltipItem(icon: Assets.icons.exchanger, label:  LocaleKeys.bottom_menu_news.tr()),
+    _TooltipItem(icon: Assets.icons.crypto, label:  LocaleKeys.bottom_menu_crypto.tr()),
+    _TooltipItem(icon: Assets.icons.converter, label:  LocaleKeys.bottom_menu_converter.tr()),
   ];
 
   void _progress() {
@@ -74,21 +76,17 @@ class _TooltipViewState extends State<TooltipView>
 
   void _back() => setState(() => _currentIndex--);
 
-  void _dismiss() {
-    _waveController.dispose();
-    widget.dissmiss?.call();
-  }
 
   String _getTooltipText(int index) {
     switch (index) {
       case 0:
-        return 'In this section you will have\nassigned currencies, which are\ncalculated at the current rate';
+        return LocaleKeys.tooltip_text1.tr();
       case 1:
-        return 'In this section you can see how\nmuch you can buy and sell currency\nin different banks';
+        return LocaleKeys.tooltip_text2.tr();
       case 2:
-        return 'In this section you will find a list of\ncryptocurrencies and their value in\nthe selected currency';
+        return LocaleKeys.tooltip_text3.tr();
       default:
-        return 'This section contains a converter\nwith which you can convert one\ncurrency to another';
+        return LocaleKeys.tooltip_text4.tr();
     }
   }
 
@@ -125,7 +123,7 @@ class _TooltipViewState extends State<TooltipView>
                     height: 40,
                     child: _currentIndex == 0
                         ? Text(
-                            'Welcome to our application!',
+                            LocaleKeys.tooltip_headline.tr(),
                             style: Theme.of(context)
                                 .textTheme
                                 .displayMedium!
@@ -191,7 +189,9 @@ class _ForwardButton extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            isLastStep ? "LET'S START" : 'NEXT',
+            isLastStep
+                ? LocaleKeys.tooltip_start.tr().toUpperCase()
+                : LocaleKeys.tooltip_next.tr().toUpperCase(),
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
@@ -224,7 +224,7 @@ class _BackButton extends StatelessWidget {
             color: Theme.of(context).colorScheme.surface,
           ),
           Text(
-            'BACK',
+            LocaleKeys.tooltip_back.tr().toUpperCase(),
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
@@ -257,9 +257,15 @@ class _TooltipBottomItem extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           CustomPaint(
-            painter: isActive ? WavePainter(animationValue: animationValue, color: Theme.of(context).colorScheme.surface) : null,
+            painter: isActive
+                ? WavePainter(
+                    animationValue: animationValue,
+                    color: Theme.of(context).colorScheme.surface)
+                : null,
             child: icon.svg(
-                color: isActive ? Theme.of(context).colorScheme.primary : Colors.transparent),
+                color: isActive
+                    ? Theme.of(context).colorScheme.primary
+                    : Colors.transparent),
           ),
           Text(
             label,

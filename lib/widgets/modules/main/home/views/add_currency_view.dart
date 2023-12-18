@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/models/currencies/crypto_currency.dart';
 import 'package:pp_8/models/currencies/forex_currency.dart';
 import 'package:pp_8/theme/custom_colors.dart';
@@ -32,11 +34,11 @@ class _AddCurrencyViewState extends State<AddCurrencyView> {
     return Scaffold(
       floatingActionButton: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
-        child: AppButton(label: 'Add', onPressed: _add),
+        child: AppButton(label: LocaleKeys.add_currency_add_action.tr(), onPressed: _add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(
-        title: Text('Add currency'),
+        title: Text(LocaleKeys.add_currency_title.tr()),
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Assets.icons.chevronLeft.svg(),
@@ -128,14 +130,14 @@ class _SegmentSelectionPanel extends StatelessWidget {
       children: [
         Expanded(
           child: _SegmentButton(
-            name: 'Currency',
+            name: LocaleKeys.add_currency_exchange.tr(),
             onPressed: onLeftPressed,
             isActive: segment == Segment.forex,
           ),
         ),
         Expanded(
           child: _SegmentButton(
-            name: 'CryptoCurrency',
+            name: LocaleKeys.add_currency_crypto.tr(),
             onPressed: onRigthPressed,
             isActive: segment == Segment.crypto,
           ),
@@ -223,7 +225,7 @@ class _ErrorState extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Some error has occured.\nPlease, try again',
+           LocaleKeys.states_error.tr().tr(),
             style: Theme.of(context).textTheme.bodyLarge,
             textAlign: TextAlign.center,
           ),

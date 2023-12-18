@@ -1,7 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pp_8/generated/assets.gen.dart';
+import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/services/database/database_keys.dart';
 import 'package:pp_8/services/database/database_service.dart';
 import 'package:pp_8/services/service_locator.dart';
@@ -27,18 +29,25 @@ class _MainViewState extends State<MainView> {
 
   final _bottomNavigationItems = [
     _BottomNavItem(
-      label: 'Home',
+      label: LocaleKeys.bottom_menu_home,
       icon: Assets.icons.home,
       module: Module.home,
     ),
     _BottomNavItem(
-        label: 'News', icon: Assets.icons.exchanger, module: Module.exchanger),
+      label: LocaleKeys.bottom_menu_news, 
+      icon: Assets.icons.exchanger,
+      module: Module.news,
+    ),
     _BottomNavItem(
-        label: 'Crypto', icon: Assets.icons.crypto, module: Module.crypto),
+      label: LocaleKeys.bottom_menu_crypto,
+      icon: Assets.icons.crypto,
+      module: Module.crypto,
+    ),
     _BottomNavItem(
-        label: 'Converter',
-        icon: Assets.icons.converter,
-        module: Module.converter)
+      label: LocaleKeys.bottom_menu_converter,
+      icon: Assets.icons.converter,
+      module: Module.converter,
+    )
   ];
 
   @override
@@ -92,7 +101,7 @@ class _MainViewState extends State<MainView> {
         ),
         body: switch (_currentModule) {
           Module.home => const HomeView(),
-          Module.exchanger => NewsView(),
+          Module.news => NewsView(),
           Module.crypto => const CryptoView(),
           Module.converter => const ConverterView(),
         },
@@ -121,7 +130,7 @@ class _BottomNavItemWidget extends StatelessWidget {
           bottomNavItem.icon.svg(
               color: isActive ? Theme.of(context).colorScheme.primary : null),
           Text(
-            bottomNavItem.label,
+            bottomNavItem.label.tr(),
             style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   color: isActive
                       ? Theme.of(context).colorScheme.primary
@@ -148,7 +157,7 @@ class _BottomNavItem {
 
 enum Module {
   home,
-  exchanger,
+  news,
   crypto,
   converter,
 }

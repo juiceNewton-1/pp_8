@@ -1,0 +1,94 @@
+{
+    "tooltip": {
+        "headline": "アプリへようこそ！",
+        "text1": "このセクションでは\n割り当てられた通貨があり、\nそれらは現在のレートで計算されます",
+        "text2": "このセクションでは\nForexと仮想通貨の分野の\n最新ニュースを追跡できます",
+        "text3": "このセクションでは\n選択した通貨での仮想通貨とその価値のリストが見つかります",
+        "text4": "このセクションには\n通貨を別の通貨に変換できる\nコンバータが含まれています",
+        "back": "戻る",
+        "next": "次へ",
+        "start": "はじめに"
+    },
+    "continue_action": "続ける",
+    "change_action": "変更",
+    "currency_change": {
+        "select": "デフォルト通貨を選択",
+        "change": "デフォルト通貨を変更"
+    },
+    "settings": {
+        "settings": "設定", 
+        "wtire_us": "お問い合わせ",
+        "rate": "アプリを評価",
+        "share": "アプリを共有",
+        "language": "言語",
+        "currency": "デフォルト通貨",
+        "resources": "世界の資源",
+        "rate_title": "アプリを評価",
+        "rate_body": "あなたのフィードバックは、\nさらにクールなアプリを\n作るインスピレーションになります",
+        "rate_action": "評価"
+    },
+    "resources": {
+        "title": "世界の資源",
+        "gold": "金",
+        "silver": "銀",
+        "oil": "石油",
+        "cocoa": "カカオ",
+        "natgaz": "天然ガス",
+        "copper": "銅",
+        "platinum": "プラチナ",
+        "wheat": "小麦",
+        "eurooil": "ユーロオイル",
+        "nickel": "ニッケル"
+    },
+    "support": {
+        "title": "お問い合わせ",
+        "enter_email": "メールアドレスを入力",
+        "email": "メール",
+        "write_comment": "コメントを書く",
+        "text": "テキスト",
+        "send": "送信",
+        "dialog_title": "素晴らしい！メッセージが\n正常に送信されました",
+        "dialog_action": "素晴らしい"
+    },
+    "change_language": {
+        "title": "言語を変更"
+    },
+    "home": {
+        "title": "メイン",
+        "exchange_rates": "為替レート",
+        "cryptocurrency": "仮想通貨",
+        "add_action": "通貨を追加",
+        "dialog_title": "この通貨を\nホーム画面から削除して\nよろしいですか？",
+        "dialog_yes": "はい",
+        "dialog_no": "いいえ",
+        "edit": "編集",
+        "done": "完了"
+    },
+    "news": {
+        "title": "ニュース"
+    },
+    "converter": {
+        "title": "コンバータ",
+        "clear_action": "クリア"
+    },
+    "crypto": {
+        "title": "仮想通貨",
+        "search": "検索"
+    },
+    "add_currency": {
+        "title": "通貨を追加",
+        "exchange": "通貨",
+        "crypto": "仮想通貨",
+        "add_action": "追加"
+    },
+    "bottom_menu": {
+        "home": "ホーム",
+        "news": "ニュース",
+        "crypto": "クリプト",
+        "converter": "コンバーター"
+    },
+    "states": {
+        "empty": "最初の通貨を追加する必要があります",
+        "error": "エラーが発生しました。\nもう一度お試しください"
+    }
+}
