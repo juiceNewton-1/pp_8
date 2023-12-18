@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "847994109739",
+    "project_id": "vlapp2kurs",
+    "storage_bucket": "vlapp2kurs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847994109739:android:9af6532a2ab5a164c40f6e",
+        "android_client_info": {
+          "package_name": "com.example.pp_8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSIUD1bR5BD01ryXt8GAV3ziNaaaUffw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

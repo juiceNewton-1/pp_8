@@ -1,0 +1,81 @@
+{
+    "tooltip": {
+        "headline": "Welcome to our application!",
+        "text1": "In this section you will have\nassigned currencies, which are\ncalculated at the current rate",
+        "text2": "In this section you will be able\nto keep track of all the latest news\nin the field of Forex and Cryptocurrencies",
+        "text3": "In this section you will find a list of\ncryptocurrencies and their value in\nthe selected currency",
+        "text4": "This section contains a converter\nwith which you can convert one\ncurrency to another",
+        "back": "Back",
+        "next": "Next",
+        "start": "Let's start"
+    },
+    "continue_action": "Continue",
+    "change_action": "Change",
+    "currency_change": {
+        "select": "Select default currency",
+        "change": "Change default currency"
+    },
+    "settings": {
+        "wtire_us": "Write to us",
+        "rate": "Rate the app",
+        "share": "Share app",
+        "language": "Language",
+        "currency": "Default currency",
+        "resources": "World Resources",
+        "rate_title": "Rate our app",
+        "rate_body": "your feedback will inspire us to\ncreate even cooler applications",
+        "rate_action": "Rate"
+    },
+    "resources": {
+        "title": "World resources",
+        "gold": "Gold",
+        "silver": "Silver",
+        "oil": "Oil",
+        "cocoa": "Cocoa",
+        "natgaz": "Natgaz",
+        "copper": "Copper",
+        "platinum": "Platinum",
+        "wheat": "Wheat",
+        "eurooil": "Eurooil",
+        "nickel": "Nickel"
+    },
+    "support": {
+        "title": "Write to us",
+        "enter_email": "Enter your email",
+        "email": "Email",
+        "write_comment": "Write your comment",
+        "text": "Text",
+        "send": "Send",
+        "dialog_title": "Great! You have successfully sent us your message",
+        "dialog_action": "Excellent"
+    },
+    "change_language": {
+        "title": "Change language"
+    },
+    "home": {
+        "title": "Main",
+        "exchange_rates": "Exchange rates",
+        "cryptocurrency": "Cryptocurrency",
+        "add_action": "Add currency",
+        "dialog_title": "Are you sure you want to\nremove this currency from\nyour home screen?",
+        "dialog_yes": "Yes",
+        "dialog_no": "No"
+    },
+    "news": {
+        "title": "News"
+    },
+    "converter": {
+        "title": "Converter",
+        "clear_action": "Clear"
+    },
+    "crypto": {
+        "title": "Crypto",
+        "search": "Search"
+    },
+    "add_currency": {
+        "title": "Add currency",
+        "exchange": "Currency",
+        "crypto": "Cryptocurrency",
+        "add_action": "Add"
+    }
+}
