@@ -19,7 +19,7 @@ class NewsApiService {
         Uri.parse(_url),
         headers: {
           'X-RapidAPI-Key':
-              '894c12740cmshc0268519b72cc5fp1dea02jsn7b7a5b95c67e',
+              '19672c07cbmsh0eb7ed69aa7a086p18194ajsn1e466426c7bc',
           'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
         },
         body: jsonEncode(data),
