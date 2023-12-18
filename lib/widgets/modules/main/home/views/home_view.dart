@@ -86,11 +86,8 @@ class _HomeViewState extends State<HomeView> {
         valueListenable: _homeController,
         builder: (context, value, child) => value.isLoading
             ? SizedBox.shrink()
-            : Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: AppButton(
-                    label: 'Add currency', onPressed: _navigateToAddCurrencies),
-              ),
+            : AppButton(
+                label: 'Add currency', onPressed: _navigateToAddCurrencies),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(

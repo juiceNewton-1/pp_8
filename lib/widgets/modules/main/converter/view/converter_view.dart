@@ -32,19 +32,16 @@ class _ConverterViewState extends State<ConverterView> {
         actions: [
           SettingsButton(),
         ],
-        leading: Padding(
-          padding: EdgeInsets.only(left: 10),
-          child: CupertinoButton(
-            padding: EdgeInsets.zero,
-            child: Text(
-              'Clear',
-              style: Theme.of(context)
-                  .textTheme
-                  .labelLarge!
-                  .copyWith(color: Theme.of(context).colorScheme.primary),
-            ),
-            onPressed: _clear,
+        leading: CupertinoButton(
+          padding: EdgeInsets.zero,
+          child: Text(
+            'Clear',
+            style: Theme.of(context)
+                .textTheme
+                .labelLarge!
+                .copyWith(color: Theme.of(context).colorScheme.primary),
           ),
+          onPressed: _clear,
         ),
       ),
       body: ValueListenableBuilder(
