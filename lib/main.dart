@@ -44,7 +44,7 @@ class ExchangeRates extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      title: 'ExchangeRates',
+      title: 'Compact exchange rates',
       debugShowCheckedModeBanner: false,
       theme: DefaultTheme.get,
       routes: AppRoutes.get(context),
