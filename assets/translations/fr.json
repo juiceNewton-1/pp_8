@@ -16,8 +16,8 @@
         "change": "Changer la devise par défaut"
     },
     "settings": {
-        "settings": "Paramètres", 
-        "wtire_us": "Écrivez-nous",
+        "title": "Paramètres", 
+        "write": "Écrivez-nous",
         "rate": "Noter l'application",
         "share": "Partager l'application",
         "language": "Langue",

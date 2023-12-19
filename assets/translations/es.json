@@ -16,8 +16,8 @@
         "change": "Cambiar moneda predeterminada"
     },
     "settings": {
-        "settings": "Configuración", 
-        "write_us": "Escríbenos",
+        "title": "Configuración", 
+        "write": "Escríbenos",
         "rate": "Califica la aplicación",
         "share": "Compartir aplicación",
         "language": "Idioma",

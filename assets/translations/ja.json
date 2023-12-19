@@ -16,8 +16,8 @@
         "change": "デフォルト通貨を変更"
     },
     "settings": {
-        "settings": "設定", 
-        "wtire_us": "お問い合わせ",
+        "title": "設定", 
+        "write": "お問い合わせ",
         "rate": "アプリを評価",
         "share": "アプリを共有",
         "language": "言語",

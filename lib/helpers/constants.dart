@@ -14,9 +14,10 @@ class Constants {
     Language(name: 'Español', locale: Locale('es')),
     Language(name: 'Français', locale: Locale('fr')),
     Language(name: 'हिन्दी', locale: Locale('hi')),
-    Language(name: '日本語', locale: Locale('jp')),
-    Language(name: '한국어', locale: Locale('kr')),
+    Language(name: '日本語', locale: Locale('ja')),
+    Language(name: '한국어', locale: Locale('ko')),
     Language(name: 'Português', locale: Locale('pt')),
+      Language(name: 'Русский', locale: Locale('ru')),
 
   ];
 

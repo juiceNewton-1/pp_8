@@ -16,9 +16,8 @@
         "change": "Change default currency"
     },
     "settings": {
-
-        "settings": "Settings",
-        "wtire_us": "Write to us",
+        "title": "Settings",
+        "write": "Write to us",
         "rate": "Rate the app",
         "share": "Share app",
         "language": "Language",
@@ -92,5 +91,4 @@
         "empty": "You need to add\nyour first currency",
         "error": "Some error has occured.\nPlease, try again"
     }
-
 }

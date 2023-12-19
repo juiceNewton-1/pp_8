@@ -15,8 +15,8 @@ abstract class  LocaleKeys {
   static const currency_change_select = 'currency_change.select';
   static const currency_change_change = 'currency_change.change';
   static const currency_change = 'currency_change';
-  static const settings_settings = 'settings.settings';
-  static const settings_wtire_us = 'settings.wtire_us';
+  static const settings_title = 'settings.title';
+  static const settings_write = 'settings.write';
   static const settings_rate = 'settings.rate';
   static const settings_share = 'settings.share';
   static const settings_language = 'settings.language';

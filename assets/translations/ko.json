@@ -16,8 +16,8 @@
         "change": "기본 통화 변경"
     },
     "settings": {
-        "settings": "설정", 
-        "wtire_us": "문의하기",
+        "title": "설정", 
+        "write": "문의하기",
         "rate": "앱 평가하기",
         "share": "앱 공유하기",
         "language": "언어",

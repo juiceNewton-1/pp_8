@@ -59,10 +59,15 @@ class _TooltipViewState extends State<TooltipView>
   int _currentIndex = 0;
 
   final _tooltipItems = [
-    _TooltipItem(icon: Assets.icons.home, label: LocaleKeys.bottom_menu_home.tr()),
-    _TooltipItem(icon: Assets.icons.exchanger, label:  LocaleKeys.bottom_menu_news.tr()),
-    _TooltipItem(icon: Assets.icons.crypto, label:  LocaleKeys.bottom_menu_crypto.tr()),
-    _TooltipItem(icon: Assets.icons.converter, label:  LocaleKeys.bottom_menu_converter.tr()),
+    _TooltipItem(
+        icon: Assets.icons.home, label: LocaleKeys.bottom_menu_home.tr()),
+    _TooltipItem(
+        icon: Assets.icons.exchanger, label: LocaleKeys.bottom_menu_news.tr()),
+    _TooltipItem(
+        icon: Assets.icons.crypto, label: LocaleKeys.bottom_menu_crypto.tr()),
+    _TooltipItem(
+        icon: Assets.icons.converter,
+        label: LocaleKeys.bottom_menu_converter.tr()),
   ];
 
   void _progress() {
@@ -75,7 +80,6 @@ class _TooltipViewState extends State<TooltipView>
   }
 
   void _back() => setState(() => _currentIndex--);
-
 
   String _getTooltipText(int index) {
     switch (index) {
@@ -97,7 +101,7 @@ class _TooltipViewState extends State<TooltipView>
         fit: StackFit.expand,
         children: [
           widget.child,
-          if (widget.isActive)
+          if (widget.isActive) ...[
             Container(
               color: Colors.black.withOpacity(0.5),
               width: double.infinity,
@@ -166,6 +170,21 @@ class _TooltipViewState extends State<TooltipView>
                 ],
               ),
             ),
+            Row(
+              children: [
+                Expanded(
+                  child: GestureDetector(
+                    onTap: _back,
+                  ),
+                ),
+                Expanded(
+                  child: GestureDetector(
+                    onTap: _progress,
+                  ),
+                )
+              ],
+            ),
+          ]
         ],
       ),
     );

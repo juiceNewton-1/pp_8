@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/firebase_options.dart';
 import 'package:pp_8/routes/routes.dart';
@@ -23,9 +24,10 @@ Future<void> main() async {
         Locale('es'),
         Locale('fr'),
         Locale('hi'),
-        Locale('jp'),
-        Locale('kr'),
+        Locale('ja'),
+        Locale('ko'),
         Locale('pt'),
+        Locale('ru'), 
       ],
       path: 'assets/translations',
       fallbackLocale: Locale('en'),

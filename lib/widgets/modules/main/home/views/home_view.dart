@@ -111,14 +111,16 @@ class _HomeViewState extends State<HomeView> {
           valueListenable: _homeController,
           builder: (context, value, child) => CupertinoButton(
             padding: EdgeInsets.zero,
-            child: Text(
-              value.mode == HomeMode.none
-                  ? LocaleKeys.home_edit.tr()
-                  : LocaleKeys.home_done.tr(),
-              style: Theme.of(context)
-                  .textTheme
-                  .labelLarge!
-                  .copyWith(color: Theme.of(context).colorScheme.primary),
+            child: FittedBox(
+              child: Text(
+                value.mode == HomeMode.none
+                    ? LocaleKeys.home_edit.tr()
+                    : LocaleKeys.home_done.tr(),
+                style: Theme.of(context)
+                    .textTheme
+                    .labelLarge!
+                    .copyWith(color: Theme.of(context).colorScheme.primary),
+              ),
             ),
             onPressed: () => _switchMode(
               value.mode == HomeMode.edit ? HomeMode.none : HomeMode.edit,

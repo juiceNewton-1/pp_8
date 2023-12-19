@@ -32,8 +32,8 @@ class CodegenLoader extends AssetLoader{
     "change": "تغيير العملة الافتراضية"
   },
   "settings": {
-    "settings": "الإعدادات",
-    "wtire_us": "التواصل معنا",
+    "title": "الإعدادات",
+    "write": "التواصل معنا",
     "rate": "تقييم التطبيق",
     "share": "مشاركة التطبيق",
     "language": "اللغة",
@@ -126,8 +126,8 @@ static const Map<String,dynamic> bn = {
     "change": "ডিফল্ট মুদ্রা পরিবর্তন করুন"
   },
   "settings": {
-    "settings": "সেটিংস",
-    "wtire_us": "আমাদের কাছে লিখুন",
+    "title": "সেটিংস",
+    "write": "আমাদের কাছে লিখুন",
     "rate": "অ্যাপ রেট করুন",
     "share": "অ্যাপ শেয়ার করুন",
     "language": "ভাষা",
@@ -220,8 +220,8 @@ static const Map<String,dynamic> de = {
     "change": "Standardwährung ändern"
   },
   "settings": {
-    "settings": "Indstillinger",
-    "write_us": "Schreiben Sie uns",
+    "title": "Indstillinger",
+    "write": "Schreiben Sie uns",
     "rate": "Bewerten Sie die App",
     "share": "App teilen",
     "language": "Sprache",
@@ -314,8 +314,8 @@ static const Map<String,dynamic> en = {
     "change": "Change default currency"
   },
   "settings": {
-    "settings": "Settings",
-    "wtire_us": "Write to us",
+    "title": "Settings",
+    "write": "Write to us",
     "rate": "Rate the app",
     "share": "Share app",
     "language": "Language",
@@ -379,7 +379,7 @@ static const Map<String,dynamic> en = {
     "crypto": "Cryptocurrency",
     "add_action": "Add"
   },
-  " bottom_menu": {
+  "bottom_menu": {
     "home": "Home",
     "news": "News",
     "crypto": "Crypto",
@@ -408,8 +408,8 @@ static const Map<String,dynamic> es = {
     "change": "Cambiar moneda predeterminada"
   },
   "settings": {
-    "settings": "Configuración",
-    "write_us": "Escríbenos",
+    "title": "Configuración",
+    "write": "Escríbenos",
     "rate": "Califica la aplicación",
     "share": "Compartir aplicación",
     "language": "Idioma",
@@ -502,8 +502,8 @@ static const Map<String,dynamic> fr = {
     "change": "Changer la devise par défaut"
   },
   "settings": {
-    "settings": "Paramètres",
-    "wtire_us": "Écrivez-nous",
+    "title": "Paramètres",
+    "write": "Écrivez-nous",
     "rate": "Noter l'application",
     "share": "Partager l'application",
     "language": "Langue",
@@ -596,8 +596,8 @@ static const Map<String,dynamic> hi = {
     "change": "डिफ़ॉल्ट मुद्रा बदलें"
   },
   "settings": {
-    "settings": "सेटिंग्स",
-    "wtire_us": "हमें लिखें",
+    "title": "सेटिंग्स",
+    "write": "हमें लिखें",
     "rate": "एप्लिकेशन की रेटिंग",
     "share": "एप्लिकेशन साझा करें",
     "language": "भाषा",
@@ -672,7 +672,7 @@ static const Map<String,dynamic> hi = {
     "error": "कुछ त्रुटि हुई है।\nकृपया पुनः प्रयास करें"
   }
 };
-static const Map<String,dynamic> jp = {
+static const Map<String,dynamic> ja = {
   "tooltip": {
     "headline": "アプリへようこそ！",
     "text1": "このセクションでは\n割り当てられた通貨があり、\nそれらは現在のレートで計算されます",
@@ -690,8 +690,8 @@ static const Map<String,dynamic> jp = {
     "change": "デフォルト通貨を変更"
   },
   "settings": {
-    "settings": "設定",
-    "wtire_us": "お問い合わせ",
+    "title": "設定",
+    "write": "お問い合わせ",
     "rate": "アプリを評価",
     "share": "アプリを共有",
     "language": "言語",
@@ -766,7 +766,7 @@ static const Map<String,dynamic> jp = {
     "error": "エラーが発生しました。\nもう一度お試しください"
   }
 };
-static const Map<String,dynamic> kr = {
+static const Map<String,dynamic> ko = {
   "tooltip": {
     "headline": "우리의 응용 프로그램에 오신 것을 환영합니다!",
     "text1": "이 섹션에서는 현재 환율로 계산된\n할당된 통화를 확인할 수 있습니다",
@@ -784,8 +784,8 @@ static const Map<String,dynamic> kr = {
     "change": "기본 통화 변경"
   },
   "settings": {
-    "settings": "설정",
-    "wtire_us": "문의하기",
+    "title": "설정",
+    "write": "문의하기",
     "rate": "앱 평가하기",
     "share": "앱 공유하기",
     "language": "언어",
@@ -878,8 +878,8 @@ static const Map<String,dynamic> pt = {
     "change": "Cambiar moneda predeterminada"
   },
   "settings": {
-    "settings": "Configurações",
-    "write_us": "Escríbenos",
+    "title": "Configurações",
+    "write": "Escríbenos",
     "rate": "Califica la aplicación",
     "share": "Compartir aplicación",
     "language": "Idioma",
@@ -954,5 +954,99 @@ static const Map<String,dynamic> pt = {
     "error": "Ocorreu algum erro.\nPor favor, tente novamente"
   }
 };
-static const Map<String, Map<String,dynamic>> mapLocales = {"ar": ar, "bn": bn, "de": de, "en": en, "es": es, "fr": fr, "hi": hi, "jp": jp, "kr": kr, "pt": pt};
+static const Map<String,dynamic> ru = {
+  "tooltip": {
+    "headline": "Добро пожаловать в наше приложение!",
+    "text1": "В этом разделе у вас будут\nназначенные валюты, которые\nрассчитываются по текущему курсу",
+    "text2": "В этом разделе вы сможете\nотслеживать все последние новости\nв области Forex и криптовалют",
+    "text3": "В этом разделе вы найдете список\nкриптовалют и их стоимость в\nвыбранной валюте",
+    "text4": "Этот раздел содержит конвертер,\nс помощью которого можно конвертировать\nодну валюту в другую",
+    "back": "Назад",
+    "next": "Далее",
+    "start": "Давайте начнем"
+  },
+  "continue_action": "Продолжить",
+  "change_action": "Изменить",
+  "currency_change": {
+    "select": "Выбрать основную валюту",
+    "change": "Изменить основную валюту"
+  },
+  "settings": {
+    "title": "Настройки",
+    "write": "Написать нам",
+    "rate": "Оценить приложение",
+    "share": "Поделиться приложением",
+    "language": "Язык",
+    "currency": "Основная валюта",
+    "resources": "Мировые ресурсы",
+    "rate_title": "Оцените наше приложение",
+    "rate_body": "Ваш отзыв вдохновит нас создавать\nеще более крутые приложения",
+    "rate_action": "Оценить"
+  },
+  "resources": {
+    "title": "Мировые ресурсы",
+    "gold": "Золото",
+    "silver": "Серебро",
+    "oil": "Нефть",
+    "cocoa": "Какао",
+    "natgaz": "Природный газ",
+    "copper": "Медь",
+    "platinum": "Платина",
+    "wheat": "Пшеница",
+    "eurooil": "Евро-нефть",
+    "nickel": "Никель"
+  },
+  "support": {
+    "title": "Написать нам",
+    "enter_email": "Введите ваш email",
+    "email": "Email",
+    "write_comment": "Напишите ваш комментарий",
+    "text": "Текст",
+    "send": "Отправить",
+    "dialog_title": "Отлично! Вы успешно отправили нам сообщение",
+    "dialog_action": "Прекрасно"
+  },
+  "change_language": {
+    "title": "Изменить язык"
+  },
+  "home": {
+    "title": "Главная",
+    "exchange_rates": "Курсы обмена",
+    "cryptocurrency": "Криптовалюта",
+    "add_action": "Добавить валюту",
+    "dialog_title": "Вы уверены, что хотите\nудалить эту валюту\nс вашего домашнего экрана?",
+    "dialog_yes": "Да",
+    "dialog_no": "Нет",
+    "edit": "Редактировать",
+    "done": "Готово"
+  },
+  "news": {
+    "title": "Новости"
+  },
+  "converter": {
+    "title": "Конвертер",
+    "clear_action": "Очистить"
+  },
+  "crypto": {
+    "title": "Крипто",
+    "search": "Поиск"
+  },
+  "add_currency": {
+    "title": "Добавить валюту",
+    "exchange": "Валюта",
+    "crypto": "Криптовалюта",
+    "add_action": "Добавить"
+  },
+  "bottom_menu": {
+    "home": "Главная",
+    "news": "Новости",
+    "crypto": "Крипто",
+    "converter": "Конвертер"
+  },
+  "states": {
+    "empty": "Вам нужно добавить\nвашу первую валюту",
+    "error": "Произошла ошибка.\nПожалуйста, попробуйте снова"
+  }
+};
+static const Map<String, Map<String,dynamic>> mapLocales = {"ar": ar, "bn": bn, "de": de, "en": en, "es": es, "fr": fr, "hi": hi, "ja": ja, "ko": ko, "pt": pt, "ru": ru};
 }

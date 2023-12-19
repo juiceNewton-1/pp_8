@@ -26,7 +26,7 @@ class _SettingsViewState extends State<SettingsView> {
         element.locale.languageCode == context.locale.languageCode);
     return Scaffold(
       appBar: AppBar(
-        title: Text(LocaleKeys.settings_settings.tr()),
+        title: Text(LocaleKeys.settings_title.tr()),
         leading: CupertinoButton(
           padding: EdgeInsets.zero,
           child: Assets.icons.chevronLeft.svg(),
@@ -39,7 +39,7 @@ class _SettingsViewState extends State<SettingsView> {
         child: Column(
           children: [
             _SettingsTile(
-              label: LocaleKeys.settings_wtire_us.tr(),
+              label: LocaleKeys.settings_write,
               onPressed: () =>
                   Navigator.of(context).pushNamed(RouteNames.writeUs),
             ),
@@ -110,7 +110,7 @@ class _SettingsTile extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Text(label, style: Theme.of(context).textTheme.bodyLarge),
+            Text(label.tr(), style: Theme.of(context).textTheme.bodyLarge),
             Spacer(),
             if (helperText != null)
               Text(helperText!, style: Theme.of(context).textTheme.bodySmall),

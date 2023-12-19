@@ -16,8 +16,8 @@
         "change": "Standardwährung ändern"
     },
     "settings": {
-        "settings": "Indstillinger", 
-        "write_us": "Schreiben Sie uns",
+        "title": "Indstillinger", 
+        "write": "Schreiben Sie uns",
         "rate": "Bewerten Sie die App",
         "share": "App teilen",
         "language": "Sprache",
