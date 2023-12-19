@@ -29,6 +29,7 @@ dependencies:
   easy_localization: ^3.0.3
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
   hive_generator: ^2.0.1
   build_runner: ^2.4.7
   flutter_gen_runner: ^5.3.2
@@ -42,8 +43,13 @@ flutter_gen:
     flutter_svg: true
   flutter_lints: ^2.0.0
 
-flutter:
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
 
+flutter:
   uses-material-design: true
 
   assets:
@@ -51,4 +57,3 @@ flutter:
     - assets/icons/
     - assets/exchanges/
     - assets/translations/
-
