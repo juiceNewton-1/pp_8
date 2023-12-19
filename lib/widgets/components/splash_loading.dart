@@ -22,7 +22,7 @@ class SplashLoading extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: 100),
-              Text('ExchangeRates',
+              Text('Compact exchange\nrates',
                   style: Theme.of(context).textTheme.displayLarge),
               SizedBox(height: 42),
               CupertinoActivityIndicator(radius: 21),
