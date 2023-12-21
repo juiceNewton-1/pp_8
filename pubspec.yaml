@@ -29,6 +29,7 @@ dependencies:
   easy_localization: ^3.0.3
   flutter_native_splash: ^2.3.8
   url_launcher: ^6.2.2
+  in_app_review: ^2.0.8
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1

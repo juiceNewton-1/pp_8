@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get_it/get_it.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:pp_8/generated/assets.gen.dart';
 import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/helpers/constants.dart';
@@ -40,7 +41,8 @@ class _SettingsViewState extends State<SettingsView> {
           children: [
             _SettingsTile(
               label: LocaleKeys.settings_write,
-              onPressed: () => Navigator.of(context).pushNamed(RouteNames.writeUs),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(RouteNames.writeUs),
             ),
             SizedBox(height: 10),
             _SettingsTile(
@@ -135,9 +137,12 @@ class _RatingDialogState extends State<_RatingDialog> {
   void _updateRating(double rating) =>
       setState(() => _currentRating = rating.toInt());
 
-  void _rate() {
-    //TODO: Rate app
+  Future<void> _rate() async {
+    if (await InAppReview.instance.isAvailable()) {
+      await InAppReview.instance.requestReview();
+    }
   }
+
   @override
   Widget build(BuildContext context) {
     return Dialog(
