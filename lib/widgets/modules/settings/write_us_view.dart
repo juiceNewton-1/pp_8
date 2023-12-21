@@ -28,7 +28,7 @@ class _WriteUsViewState extends State<WriteUsView> {
   }
 
   Future<void> _send() async => await EmailHelper.launchEmailSubmission(
-        toEmail: 'support@gmail.com',
+        toEmail: 'ngocthiminh935@gmail.com',
         subject: _subjectController.text,
         body: _messageController.text,
         errorCallback: () {},

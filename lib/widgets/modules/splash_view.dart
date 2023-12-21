@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pp_8/helpers/dialog_helper.dart';
 import 'package:pp_8/routes/route_names.dart';
@@ -54,6 +55,7 @@ class _SplashViewState extends State<SplashView> {
   }
 
   void _navigate() {
+    FlutterNativeSplash.remove();
     final acceptedPrivacy =
         _databaseService.get(DatabaseKeys.acceptedPrivacy) ?? false;
     if (!acceptedPrivacy) {
