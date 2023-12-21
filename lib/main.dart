@@ -1,5 +1,9 @@
+import 'dart:developer';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:pp_8/firebase_options.dart';
@@ -11,8 +15,7 @@ Future<void> main() async {
   final bindings = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: bindings);
   await EasyLocalization.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await ServiceLocator.setup();
+  await _initApp();
 
   runApp(
     EasyLocalization(
@@ -34,6 +37,24 @@ Future<void> main() async {
       fallbackLocale: Locale('en'),
     ),
   );
+}
+
+Future<void> _initApp() async {
+  try {
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
+    FlutterError.onError = (errorDetails) {
+      FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+    };
+    PlatformDispatcher.instance.onError = (error, stack) {
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+      return true;
+    };
+  } on Exception catch (e) {
+    log("Failed to initialize Firebase: $e");
+  }
+
+  await ServiceLocator.setup();
 }
 
 class ExchangeRates extends StatelessWidget {
