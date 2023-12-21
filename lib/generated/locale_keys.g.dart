@@ -39,8 +39,8 @@ abstract class  LocaleKeys {
   static const resources_nickel = 'resources.nickel';
   static const resources = 'resources';
   static const support_title = 'support.title';
-  static const support_enter_email = 'support.enter_email';
-  static const support_email = 'support.email';
+  static const support_write_subject = 'support.write_subject';
+  static const support_subject = 'support.subject';
   static const support_write_comment = 'support.write_comment';
   static const support_text = 'support.text';
   static const support_send = 'support.send';

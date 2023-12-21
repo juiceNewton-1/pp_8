@@ -2,7 +2,7 @@ name: pp_8
 description: "A new Flutter project."
 publish_to: "none"
 
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
   sdk: ">=3.2.3 <4.0.0"
@@ -27,6 +27,8 @@ dependencies:
   equatable: ^2.0.5
   connectivity_plus: ^5.0.2
   easy_localization: ^3.0.3
+  flutter_native_splash: ^2.3.8
+  url_launcher: ^6.2.2
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
@@ -43,6 +45,11 @@ flutter_gen:
     flutter_svg: true
   flutter_lints: ^2.0.0
 
+flutter_native_splash:
+  color: "#f2f1f6"
+  image: assets/images/icon.png
+
+ 
 flutter_launcher_icons:
   android: true
   ios: true

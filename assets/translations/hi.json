@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "हमें लिखें",
-        "enter_email": "अपना ईमेल दर्ज करें",
-        "email": "ईमेल",
+        "write_subject": "विषय लिखें",
+        "subject": "विषय",
         "write_comment": "अपनी टिप्पणी लिखें",
         "text": "टेक्स्ट",
         "send": "भेजें",

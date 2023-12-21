@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "お問い合わせ",
-        "enter_email": "メールアドレスを入力",
-        "email": "メール",
+        "write_subject": "件名を書く",
+        "subject": "件名",
         "write_comment": "コメントを書く",
         "text": "テキスト",
         "send": "送信",

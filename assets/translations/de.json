@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "Schreiben Sie uns",
-        "enter_email": "Geben Sie Ihre E-Mail-Adresse ein",
-        "email": "E-Mail",
+        "write_subject": "Skriv emnet",
+        "subject": "Emne",
         "write_comment": "Schreiben Sie Ihren Kommentar",
         "text": "Text",
         "send": "Senden",

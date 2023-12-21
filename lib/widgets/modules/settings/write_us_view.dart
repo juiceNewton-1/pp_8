@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pp_8/generated/assets.gen.dart';
 import 'package:pp_8/generated/locale_keys.g.dart';
-import 'package:pp_8/routes/route_names.dart';
+import 'package:pp_8/helpers/email_helper.dart';
 import 'package:pp_8/widgets/components/app_button.dart';
 import 'package:pp_8/widgets/components/app_text_field.dart';
 
@@ -15,39 +15,28 @@ class WriteUsView extends StatefulWidget {
 }
 
 class _WriteUsViewState extends State<WriteUsView> {
-  final _emaiController = TextEditingController();
+  final _subjectController = TextEditingController();
   final _messageController = TextEditingController();
 
   var _isButtonEnabled = false;
 
   @override
   void dispose() {
-    _emaiController.dispose();
+    _subjectController.dispose();
     _messageController.dispose();
     super.dispose();
   }
 
-  void _send() {
-    setState(() {
-      _emaiController.clear();
-      _messageController.clear();
-    });
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) => _MessageSentDialog(),
-    );
-  }
+  Future<void> _send() async => await EmailHelper.launchEmailSubmission(
+        toEmail: 'support@gmail.com',
+        subject: _subjectController.text,
+        body: _messageController.text,
+        errorCallback: () {},
+        doneCallback: Navigator.of(context).pop,
+      );
 
   void _onChanged(String query) => setState(() => _isButtonEnabled =
-      _isEmail(_emaiController.text) && _messageController.text.isNotEmpty);
-
-  bool _isEmail(String em) {
-    final regExp = RegExp(
-        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
-
-    return regExp.hasMatch(em);
-  }
+      _subjectController.text.isNotEmpty && _messageController.text.isNotEmpty);
 
   @override
   Widget build(BuildContext context) {
@@ -67,15 +56,15 @@ class _WriteUsViewState extends State<WriteUsView> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              LocaleKeys.support_enter_email.tr(),
+              LocaleKeys.support_write_subject.tr(),
               style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(height: 5),
             SizedBox(
               height: 46,
               child: AppTextField(
-                placeholder: LocaleKeys.support_email.tr(),
-                controller: _emaiController,
+                placeholder: LocaleKeys.support_subject.tr(),
+                controller: _subjectController,
                 onChanged: _onChanged,
               ),
             ),
@@ -108,37 +97,3 @@ class _WriteUsViewState extends State<WriteUsView> {
   }
 }
 
-class _MessageSentDialog extends StatelessWidget {
-  const _MessageSentDialog();
-
-  @override
-  Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      insetPadding: EdgeInsets.symmetric(horizontal: 16),
-      child: Padding(
-        padding: EdgeInsets.only(left: 18, right: 18, top: 16, bottom: 24),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Assets.images.success.image(width: 105, height: 105),
-            SizedBox(height: 12),
-            Text(
-              LocaleKeys.support_dialog_title.tr(),
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyLarge,
-            ),
-            SizedBox(height: 17),
-            AppButton(
-              label: LocaleKeys.support_dialog_action.tr(),
-              onPressed: () => Navigator.of(context).popUntil(
-                (route) => route.settings.name == RouteNames.settings,
-              ),
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}

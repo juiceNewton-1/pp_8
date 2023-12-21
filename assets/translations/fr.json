@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "Écrivez-nous",
-        "enter_email": "Entrez votre adresse e-mail",
-        "email": "E-mail",
+        "write_subject": "Écrire le sujet",
+        "subject": "Sujet",
         "write_comment": "Rédigez votre commentaire",
         "text": "Texte",
         "send": "Envoyer",

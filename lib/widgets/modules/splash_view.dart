@@ -8,7 +8,6 @@ import 'package:pp_8/helpers/dialog_helper.dart';
 import 'package:pp_8/routes/route_names.dart';
 import 'package:pp_8/services/database/database_keys.dart';
 import 'package:pp_8/services/database/database_service.dart';
-import 'package:pp_8/widgets/components/splash_loading.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -23,7 +22,7 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   void initState() {
-    Timer(Duration(milliseconds: 1500), _init);
+    _init();
     super.initState();
   }
 
@@ -61,7 +60,8 @@ class _SplashViewState extends State<SplashView> {
       Navigator.of(context).pushReplacementNamed(RouteNames.privacy);
     } else {
       if (_databaseService.isCurrencyUintEmpty) {
-        Navigator.of(context).pushReplacementNamed(RouteNames.currencySelection);
+        Navigator.of(context)
+            .pushReplacementNamed(RouteNames.currencySelection);
       } else {
         Navigator.of(context).pushReplacementNamed(RouteNames.main);
       }
@@ -70,9 +70,6 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: SplashLoading(),
-    );
+    return Scaffold();
   }
 }

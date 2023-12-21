@@ -40,8 +40,7 @@ class _SettingsViewState extends State<SettingsView> {
           children: [
             _SettingsTile(
               label: LocaleKeys.settings_write,
-              onPressed: () =>
-                  Navigator.of(context).pushNamed(RouteNames.writeUs),
+              onPressed: () => Navigator.of(context).pushNamed(RouteNames.writeUs),
             ),
             SizedBox(height: 10),
             _SettingsTile(

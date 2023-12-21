@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "Написать нам",
-        "enter_email": "Введите ваш email",
-        "email": "Email",
+        "write_subject": "Напишите тему",
+        "subject": "Тема",
         "write_comment": "Напишите ваш комментарий",
         "text": "Текст",
         "send": "Отправить",

@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "문의하기",
-        "enter_email": "이메일을 입력하세요",
-        "email": "이메일",
+        "write_subject": "주제를 작성하다",
+"subject": "주제",
         "write_comment": "의견을 작성하세요",
         "text": "텍스트",
         "send": "보내기",

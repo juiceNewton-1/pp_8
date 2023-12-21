@@ -42,8 +42,8 @@
     },
     "support": {
         "title": "আমাদের কাছে লিখুন",
-        "enter_email": "আপনার ইমেল দিন",
-        "email": "ইমেল",
+        "write_subject": "বিষয় লিখুন",
+        "subject": "বিষয়", 
         "write_comment": "আপনার মন্তব্য লিখুন",
         "text": "মাত্রা",
         "send": "পাঠান",
