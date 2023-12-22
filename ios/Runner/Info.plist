@@ -42,6 +42,8 @@
 		<true/>
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
+			<string>sms</string>
+			<string>tel</string>
 			<string>mailto</string>
 		</array>
 		<key>UIApplicationSupportsIndirectInputEvents</key>
