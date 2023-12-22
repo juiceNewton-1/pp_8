@@ -25,6 +25,8 @@ abstract class  LocaleKeys {
   static const settings_rate_title = 'settings.rate_title';
   static const settings_rate_body = 'settings.rate_body';
   static const settings_rate_action = 'settings.rate_action';
+  static const settings_privacy = 'settings.privacy';
+  static const settings_terms = 'settings.terms';
   static const settings = 'settings';
   static const resources_title = 'resources.title';
   static const resources_gold = 'resources.gold';

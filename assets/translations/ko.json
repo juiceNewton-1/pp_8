@@ -16,7 +16,7 @@
         "change": "기본 통화 변경"
     },
     "settings": {
-        "title": "설정", 
+        "title": "설정",
         "write": "문의하기",
         "rate": "앱 평가하기",
         "share": "앱 공유하기",
@@ -25,7 +25,9 @@
         "resources": "세계 자원",
         "rate_title": "우리 앱 평가하기",
         "rate_body": "귀하의 의견은 우리를 더 멋진 앱을 만들도록\n격려할 것입니다",
-        "rate_action": "평가하기"
+        "rate_action": "평가하기",
+        "privacy": "개인 정보 보호 정책",
+        "terms": "이용 약관"
     },
     "resources": {
         "title": "세계 자원",
@@ -43,7 +45,7 @@
     "support": {
         "title": "문의하기",
         "write_subject": "주제를 작성하다",
-"subject": "주제",
+        "subject": "주제",
         "write_comment": "의견을 작성하세요",
         "text": "텍스트",
         "send": "보내기",

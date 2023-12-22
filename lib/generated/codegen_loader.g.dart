@@ -41,7 +41,9 @@ class CodegenLoader extends AssetLoader{
     "resources": "موارد العالم",
     "rate_title": "قيم تطبيقنا",
     "rate_body": "تعليقاتك ستلهمنا لإنشاء\nتطبيقات أروع حتى",
-    "rate_action": "قيم"
+    "rate_action": "قيم",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام"
   },
   "resources": {
     "title": "موارد العالم",
@@ -135,7 +137,9 @@ static const Map<String,dynamic> bn = {
     "resources": "বিশ্ব সম্পদ",
     "rate_title": "আমাদের অ্যাপ রেট করুন",
     "rate_body": "আপনার মতামত আমাদের একটি\nআরও শীর্ষক অ্যাপ্লিকেশন তৈরির\nজন্য আমাদের অনুপ্রেরণা দেবে",
-    "rate_action": "রেট করুন"
+    "rate_action": "রেট করুন",
+    "privacy": "গোপনীয়তা নীতি",
+    "terms": "ব্যবহারের শর্তাবলী"
   },
   "resources": {
     "title": "বিশ্ব সম্পদ",
@@ -229,7 +233,9 @@ static const Map<String,dynamic> de = {
     "resources": "Weltressourcen",
     "rate_title": "Bewerten Sie unsere App",
     "rate_body": "Ihr Feedback wird uns inspirieren,\nnoch coolere Anwendungen zu erstellen",
-    "rate_action": "Bewerten"
+    "rate_action": "Bewerten",
+    "privacy": "Fortrolighedspolitik",
+    "terms": "Brugsbetingelser"
   },
   "resources": {
     "title": "Weltressourcen",
@@ -323,7 +329,9 @@ static const Map<String,dynamic> en = {
     "resources": "World Resources",
     "rate_title": "Rate our app",
     "rate_body": "your feedback will inspire us to\ncreate even cooler applications",
-    "rate_action": "Rate"
+    "rate_action": "Rate",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of use"
   },
   "resources": {
     "title": "World resources",
@@ -417,7 +425,9 @@ static const Map<String,dynamic> es = {
     "resources": "Recursos Mundiales",
     "rate_title": "Califica nuestra aplicación",
     "rate_body": "tu opinión nos inspirará a\ncrear aplicaciones aún mejores",
-    "rate_action": "Calificar"
+    "rate_action": "Calificar",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso"
   },
   "resources": {
     "title": "Recursos mundiales",
@@ -511,7 +521,9 @@ static const Map<String,dynamic> fr = {
     "resources": "Ressources mondiales",
     "rate_title": "Notez notre application",
     "rate_body": "Votre avis nous inspirera à\ncréer des applications encore plus géniales",
-    "rate_action": "Noter"
+    "rate_action": "Noter",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   },
   "resources": {
     "title": "Ressources mondiales",
@@ -605,7 +617,9 @@ static const Map<String,dynamic> hi = {
     "resources": "विश्व स्रोत",
     "rate_title": "हमारे एप्लिकेशन को रेट करें",
     "rate_body": "आपकी प्रतिक्रिया हमें प्रेरित करेगी\nऔर भी बेहतर एप्लिकेशन बनाने के लिए",
-    "rate_action": "रेटिंग दें"
+    "rate_action": "रेटिंग दें",
+    "privacy": "गोपनीयता नीति",
+    "terms": "उपयोग की शर्तें"
   },
   "resources": {
     "title": "विश्व स्रोत",
@@ -699,7 +713,9 @@ static const Map<String,dynamic> ja = {
     "resources": "世界の資源",
     "rate_title": "アプリを評価",
     "rate_body": "あなたのフィードバックは、\nさらにクールなアプリを\n作るインスピレーションになります",
-    "rate_action": "評価"
+    "rate_action": "評価",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
   },
   "resources": {
     "title": "世界の資源",
@@ -793,7 +809,9 @@ static const Map<String,dynamic> ko = {
     "resources": "세계 자원",
     "rate_title": "우리 앱 평가하기",
     "rate_body": "귀하의 의견은 우리를 더 멋진 앱을 만들도록\n격려할 것입니다",
-    "rate_action": "평가하기"
+    "rate_action": "평가하기",
+    "privacy": "개인 정보 보호 정책",
+    "terms": "이용 약관"
   },
   "resources": {
     "title": "세계 자원",
@@ -887,7 +905,9 @@ static const Map<String,dynamic> pt = {
     "resources": "Recursos Mundiales",
     "rate_title": "Califica nuestra aplicación",
     "rate_body": "tu opinión nos inspirará a\ncrear aplicaciones aún mejores",
-    "rate_action": "Calificar"
+    "rate_action": "Calificar",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso"
   },
   "resources": {
     "title": "Recursos mundiales",
@@ -981,7 +1001,9 @@ static const Map<String,dynamic> ru = {
     "resources": "Мировые ресурсы",
     "rate_title": "Оцените наше приложение",
     "rate_body": "Ваш отзыв вдохновит нас создавать\nеще более крутые приложения",
-    "rate_action": "Оценить"
+    "rate_action": "Оценить",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования"
   },
   "resources": {
     "title": "Мировые ресурсы",

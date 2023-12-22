@@ -11,4 +11,5 @@ class RouteNames {
   static const changeCurrency = '/chnageCurrency';
   static const singleNews = '/singleNews';
   static const privacy = '/privacy';
+  static const agreement = '/agreement';
 }

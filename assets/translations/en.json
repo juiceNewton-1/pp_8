@@ -25,7 +25,9 @@
         "resources": "World Resources",
         "rate_title": "Rate our app",
         "rate_body": "your feedback will inspire us to\ncreate even cooler applications",
-        "rate_action": "Rate"
+        "rate_action": "Rate", 
+        "privacy": "Privacy Policy", 
+        "terms": "Terms of use"
     },
     "resources": {
         "title": "World resources",

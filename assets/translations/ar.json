@@ -25,7 +25,9 @@
         "resources": "موارد العالم",
         "rate_title": "قيم تطبيقنا",
         "rate_body": "تعليقاتك ستلهمنا لإنشاء\nتطبيقات أروع حتى",
-        "rate_action": "قيم"
+        "rate_action": "قيم",
+        "privacy": "سياسة الخصوصية",
+        "terms": "شروط الاستخدام"
     },
     "resources": {
         "title": "موارد العالم",
@@ -43,7 +45,7 @@
     "support": {
         "title": "التواصل معنا",
         "write_subject": "اكتب الموضوع",
-        "subject": "الموضوع", 
+        "subject": "الموضوع",
         "write_comment": "اكتب تعليقك",
         "text": "نص",
         "send": "إرسال",

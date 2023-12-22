@@ -16,7 +16,7 @@
         "change": "デフォルト通貨を変更"
     },
     "settings": {
-        "title": "設定", 
+        "title": "設定",
         "write": "お問い合わせ",
         "rate": "アプリを評価",
         "share": "アプリを共有",
@@ -25,7 +25,9 @@
         "resources": "世界の資源",
         "rate_title": "アプリを評価",
         "rate_body": "あなたのフィードバックは、\nさらにクールなアプリを\n作るインスピレーションになります",
-        "rate_action": "評価"
+        "rate_action": "評価",
+        "privacy": "プライバシーポリシー",
+        "terms": "利用規約"
     },
     "resources": {
         "title": "世界の資源",

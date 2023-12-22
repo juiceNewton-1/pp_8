@@ -7,9 +7,11 @@ import 'package:in_app_review/in_app_review.dart';
 import 'package:pp_8/generated/assets.gen.dart';
 import 'package:pp_8/generated/locale_keys.g.dart';
 import 'package:pp_8/helpers/constants.dart';
+import 'package:pp_8/models/arguments.dart';
 import 'package:pp_8/routes/route_names.dart';
 import 'package:pp_8/services/repositories/currency_uint_repository.dart';
 import 'package:pp_8/widgets/components/app_button.dart';
+import 'package:pp_8/widgets/modules/settings/agreement_view.dart';
 
 class SettingsView extends StatefulWidget {
   const SettingsView({super.key});
@@ -79,6 +81,25 @@ class _SettingsViewState extends State<SettingsView> {
               label: LocaleKeys.settings_resources.tr(),
               onPressed: () =>
                   Navigator.of(context).pushNamed(RouteNames.resources),
+            ),
+            SizedBox(height: 10),
+            _SettingsTile(
+              label: LocaleKeys.settings_privacy.tr(),
+              onPressed: () => Navigator.of(context).pushNamed(
+                RouteNames.agreement,
+                arguments: AgreementViewArguments(
+                    agreementType: AgreementType.privacy),
+              ),
+            ),
+            SizedBox(height: 10),
+            _SettingsTile(
+              label: LocaleKeys.settings_terms.tr(),
+              onPressed: () => Navigator.of(context).pushNamed(
+                RouteNames.agreement,
+                arguments: AgreementViewArguments(
+                  agreementType: AgreementType.terms,
+                ),
+              ),
             ),
           ],
         ),

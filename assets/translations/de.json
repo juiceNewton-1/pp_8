@@ -16,7 +16,7 @@
         "change": "Standardwährung ändern"
     },
     "settings": {
-        "title": "Indstillinger", 
+        "title": "Indstillinger",
         "write": "Schreiben Sie uns",
         "rate": "Bewerten Sie die App",
         "share": "App teilen",
@@ -25,7 +25,9 @@
         "resources": "Weltressourcen",
         "rate_title": "Bewerten Sie unsere App",
         "rate_body": "Ihr Feedback wird uns inspirieren,\nnoch coolere Anwendungen zu erstellen",
-        "rate_action": "Bewerten"
+        "rate_action": "Bewerten",
+        "privacy": "Fortrolighedspolitik",
+        "terms": "Brugsbetingelser"
     },
     "resources": {
         "title": "Weltressourcen",

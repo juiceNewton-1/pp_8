@@ -5,6 +5,7 @@ import 'package:pp_8/widgets/modules/main/home/views/add_currency_view.dart';
 import 'package:pp_8/widgets/modules/main/main_view.dart';
 import 'package:pp_8/widgets/modules/main/news/views/single_news_view.dart';
 import 'package:pp_8/widgets/modules/privacy_view.dart';
+import 'package:pp_8/widgets/modules/settings/agreement_view.dart';
 import 'package:pp_8/widgets/modules/settings/change_currency/view/change_currency_view.dart';
 import 'package:pp_8/widgets/modules/settings/language_view.dart';
 import 'package:pp_8/widgets/modules/settings/resource/view/resources_view.dart';
@@ -25,8 +26,9 @@ class AppRoutes {
         RouteNames.writeUs: (context) => const WriteUsView(),
         RouteNames.main: (context) => const MainView(),
         RouteNames.addCurrency: (context) => const AddCurrencyView(),
-        RouteNames.changeCurrency: (context) =>  const ChangeCurrencyView(), 
-        RouteNames.singleNews: (context) => SingleNewsView.ceate(context), 
-        RouteNames.privacy: (context) => const  PrivacyView(),
+        RouteNames.changeCurrency: (context) => const ChangeCurrencyView(),
+        RouteNames.singleNews: (context) => SingleNewsView.ceate(context),
+        RouteNames.privacy: (context) => const PrivacyView(),
+        RouteNames.agreement: (context) => AgreementView.create(context),
       };
 }

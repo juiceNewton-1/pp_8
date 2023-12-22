@@ -16,7 +16,7 @@
         "change": "Changer la devise par défaut"
     },
     "settings": {
-        "title": "Paramètres", 
+        "title": "Paramètres",
         "write": "Écrivez-nous",
         "rate": "Noter l'application",
         "share": "Partager l'application",
@@ -25,7 +25,9 @@
         "resources": "Ressources mondiales",
         "rate_title": "Notez notre application",
         "rate_body": "Votre avis nous inspirera à\ncréer des applications encore plus géniales",
-        "rate_action": "Noter"
+        "rate_action": "Noter",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation"
     },
     "resources": {
         "title": "Ressources mondiales",

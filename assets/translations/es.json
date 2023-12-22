@@ -16,7 +16,7 @@
         "change": "Cambiar moneda predeterminada"
     },
     "settings": {
-        "title": "Configuración", 
+        "title": "Configuración",
         "write": "Escríbenos",
         "rate": "Califica la aplicación",
         "share": "Compartir aplicación",
@@ -25,7 +25,9 @@
         "resources": "Recursos Mundiales",
         "rate_title": "Califica nuestra aplicación",
         "rate_body": "tu opinión nos inspirará a\ncrear aplicaciones aún mejores",
-        "rate_action": "Calificar"
+        "rate_action": "Calificar",
+        "privacy": "Política de privacidad",
+        "terms": "Términos de uso"
     },
     "resources": {
         "title": "Recursos mundiales",
